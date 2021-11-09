@@ -10,18 +10,18 @@ new Vue({
     },
 
     methods: {
-        getApiEmailList(array) {
+        getApiEmailList() {
+
+            this.emailList = []
 
             const url = "https://flynn.boolean.careers/exercises/api/random/mail"
 
             for (let i = 0; i < 10; i++) {
 
                 axios.get(url).then((ajaxResponse) => {
-                    array.push(ajaxResponse.data.response)
+                    this.emailList.push(ajaxResponse.data.response)
                 })
             }
-
-            console.log(this.emailList);
         }
     },
 })
