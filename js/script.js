@@ -13,7 +13,7 @@ new Vue({
 
             this.emailList = []
 
-            let counterApiCalls = 0
+            // let counterApiCalls = 0
 
             const verifiedArray = []
 
@@ -22,15 +22,13 @@ new Vue({
             for (let i = 0; i < 10; i++) {
 
                 axios.get(url).then((ajaxResponse) => {
-                    counterApiCalls++
+                    // counterApiCalls++
                     verifiedArray.push(ajaxResponse.data.response)
 
                     if (verifiedArray.length === 10) {
                         this.emailList = verifiedArray
                     }
                 })
-
-
             }
         }
     },
