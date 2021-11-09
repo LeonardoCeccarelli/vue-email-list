@@ -31,7 +31,7 @@
                 <button @click="getApiEmailList">CREA LISTA E-MAIL</button>
             </div>
 
-            <ul class="list_container" v-if="emailList.length === counterApiCalls">
+            <ul class="list_container">
                 <li v-for="el in emailList">
                     <h3>{{ el }}</h3>
                 </li>
