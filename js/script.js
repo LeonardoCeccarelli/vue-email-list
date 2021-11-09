@@ -25,7 +25,7 @@ new Vue({
                     counterApiCalls++
                     verifiedArray.push(ajaxResponse.data.response)
 
-                    if (counterApiCalls === 10) {
+                    if (verifiedArray.length === 10) {
                         this.emailList = verifiedArray
                     }
                 })
