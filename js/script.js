@@ -11,7 +11,7 @@ new Vue({
     methods: {
         getApiEmailList() {
 
-            this.emailList = []
+            // this.emailList = []
 
             // let counterApiCalls = 0
 
